@@ -1,2 +1,5 @@
----
-# tasks file for base-config
+- name: enable repos
+  template:
+    src: 3tier.repo
+    dest: /etc/yum.repos.d/open_three-tier-app.repo
+    mode: 0644

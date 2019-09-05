@@ -10,8 +10,9 @@
     state: present
     kind: ssh
     host: workstation-${OSP_GUID}.rhpds.opentlc.com
-    username: cloud-user
+    username: admin
     ssh_key_data: "/root/.ssh/openstack.pem"
+    username: cloud-user
 
 - name: Create Inventory
   command: |

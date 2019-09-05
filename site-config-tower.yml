@@ -1,4 +1,4 @@
-- hosts: bastion.cefe.example.opentlc.com
+- hosts: localhost
   gather_facts: false 
   become: yes 
   roles:

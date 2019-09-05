@@ -1,4 +1,4 @@
-- hosts: workstation
+- hosts: workstation-8956.rhpds.opentlc.com
   become: yes
   roles:
     - osp-servers

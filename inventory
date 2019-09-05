@@ -5,6 +5,6 @@ bastion.cefe.example.opentlc.com
 workstation-8956.rhpds.opentlc.com
 
 [all:vars]
-ansible_user=smramach-redhat.com
-ansible_ssh_private_key_file=/home/smramach/.ssh/openstack.pem
-ansible_ssh_public_key_file=/home/smramach/.ssh/openstack.pub
+ansible_user=cloud-user
+ansible_ssh_private_key_file=/root/.ssh/openstack.pem
+ansible_ssh_public_key_file=/root/.ssh/openstack.pub

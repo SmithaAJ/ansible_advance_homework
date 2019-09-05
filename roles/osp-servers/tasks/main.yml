@@ -33,6 +33,11 @@
     timeout: 200
   with_dict: "{{osp_servers}}"
   
+- name: OpenStack servers
+  os_server_facts:
+    cloud: ospcloud
+  register: result
+  
 - name: Wait for server to be available
   wait_for:
     host: "{{ item.public_v4 }}"

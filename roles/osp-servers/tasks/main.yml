@@ -20,7 +20,7 @@
         curl -o /tmp/internal.repo http://www.opentlc.com/download/ansible_bootcamp/repo/internal.repo
         cp /tmp/internal.repo /etc/yum.repos.d/internal.repo
    with_subelements:
-     - "{{osp_servers}}"
+     - "{{ osp_servers }}"
      - meta
      
  - name: Add floating IP to Servers
@@ -32,7 +32,7 @@
      network: ext_network
      wait: true
      timeout: 180
-   with_dict: "{{osp_servers}}"
+   with_dict: "{{ osp_servers }}"
   
  - name: Wait for server to be available
    wait_for:

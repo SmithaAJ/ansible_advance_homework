@@ -1,0 +1,10 @@
+[bastion_tower]
+bastion.cefe.example.opentlc.com
+
+[workstation]
+workstation-8956.rhpds.opentlc.com
+
+[all:vars]
+ansible_user=smramach-redhat.com
+ansible_ssh_private_key_file=/home/smramach/.ssh/openstack.pem
+ansible_ssh_public_key_file=/home/smramach/.ssh/openstack.pub

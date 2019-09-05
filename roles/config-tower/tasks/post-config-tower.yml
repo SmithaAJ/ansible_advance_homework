@@ -9,8 +9,9 @@
     organization: Default
     state: present
     kind: ssh
-    host: workstation-${OSP_GUID}.rhpds.opentlc.com
-    username: admin
+    tower_host: workstation-${OSP_GUID}.rhpds.opentlc.com
+    tower_username: admin
+    tower_password: r3dh4t1!
     ssh_key_data: "/root/.ssh/openstack.pem"
     username: cloud-user
 

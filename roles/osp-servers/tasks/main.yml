@@ -19,7 +19,7 @@
         cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
         curl -o /tmp/internal.repo http://www.opentlc.com/download/ansible_bootcamp/repo/internal.repo
         cp /tmp/internal.repo /etc/yum.repos.d/internal.repo
-   with_subelements: "{{item.0.name }}"
+   with_subelements: "{{instance}}"
   
  - name: Add floating IP to Servers
    os_floating_ip:
@@ -30,7 +30,7 @@
      network: ext_network
      wait: true
      timeout: 180
-   with_subelements: "{{item.0.name }}"
+   with_subelements: "{{instanceip}}"
    
  - name: Wait for server to be available
    wait_for:

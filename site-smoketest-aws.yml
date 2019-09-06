@@ -1,4 +1,3 @@
-
 - hosts: workstation
   gather_facts: false
   tasks:
